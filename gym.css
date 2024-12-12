@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(1, 1, 14);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(1, 1, 14, 0.95);
+  padding: 22px;
+  box-shadow: 0px 2px 6px 2px rgb(31, 30, 30);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: rgba(1, 1, 14, 1);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 63px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 11px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+}
+
+.logo {
+  font-size: 25px;
+  margin-left: 33px;
+  color: rgb(42, 250, 42);
+  font-weight: bold;
+}
+
+/* Buttons */
+ul li button, .homeText button, .card button, .contactUs button {
+  padding: 10px 20px;
+  background-color: rgb(4, 180, 4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+ul li button:hover, .homeText button:hover, .card button:hover, .contactUs button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: rgb(20, 251, 20);
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.home img {
+  width: 39%;
+  max-width: 500px;
+  margin-left: 100px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.homeText {
+  max-width: 500px;
+}
+
+.homeText h1 {
+  font-size: 4rem;
+  color: rgb(55, 248, 55);
+  margin-bottom: 15px;
+}
+
+.homeText h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.homeText p {
+  color: silver;
+  margin-bottom: 15px;
+}
+
+/* Programs Section */
+.program, .plan, .blog, .contact {
+  padding: 50px 0;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.head h2 {
+  font-size: 2.5rem;
+}
+
+.head span {
+  color: rgb(37, 244, 37);
+}
+
+.ourProgram {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ourProgram .crd {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.ourProgram .crd img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ourProgram .crd:hover {
+  transform: scale(1.05);
+}
+
+/* Plans Section */
+.ourPlan {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ourPlan .card {
+  width: 300px;
+  background-color: rgb(36, 35, 35);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  color: rgb(58, 249, 58);
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  color: rgb(24, 255, 24);
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: silver;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: black;
+}
+
+/* Blog Section */
+.ourBlog {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ourBlog .blogCard {
+  width: 300px;
+  background-color: rgb(42, 41, 41);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blogCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blogText {
+  padding: 20px;
+}
+
+.blogText a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.blogText a:hover {
+  background-color: rgb(0, 100, 0);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #7dd766;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+container.h1 {
+  text-align: center;
+  color: #4A4A4A;
+}
+
+container.label {
+  display: block;
+  margin: 10px 0;
+}
+
+container.select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.workout-plans {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.plan {
+  color: beige;
+  background: #1b1313;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  
+}
+
+.plan img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.plan li {
+  margin: 5px 0;
+}
+
+/* Contact Section */
+.contactPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contactPage img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+.contactUs input {
+  width: 30%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(20, 20, 40);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footerText h3 {
+  margin-bottom: 15px;
+  color: rgb(42, 250, 42);
+}
+
+.footerText p {
+  color: silver;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home, .ourProgram, .ourPlan, .ourBlog, .contactPage {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .home img, .contactPage img {
+      margin: 20px 0;
+      width: 80%;
+      max-width: 400px;
+  }
+
+  nav ul {
+      display: none; /* For mobile, you might want to implement a hamburger menu */
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Workout Planner Improvements */
+.workout-planner-link {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgb(4, 180, 4);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.workout-planner-link:hover {
+  background-color: rgb(20, 251, 20);
+}
+
+/* Form Validation Styles */
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+.goal-options, .equipment-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.goal-options div, .equipment-options div, .workout-selection div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.goal-options input, .equipment-options input, .workout-selection input {
+  margin-right: 10px;
+}
+
+
+
